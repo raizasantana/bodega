@@ -4,19 +4,19 @@ import java.sql.Date;
 
 public class Comida extends Produto{
 	
-	private float quilos;
+	private double quilos;
 	
 	
-	public Comida(String d, Date v, String m, float pu,String cat) {
+	public Comida(String d, String v, String m, double pu, double kg,String cat) {
 		super(d, v, m, pu,cat);
-		// TODO Auto-generated constructor stub
+		this.setQuilos(kg);
 	}
 
-	public float getQuilos() {
+	public double getQuilos() {
 		return quilos;
 	}
 
-	public void setQuilos(float quilos) {
+	public void setQuilos(double quilos) {
 		this.quilos = quilos;
 	}
 	

@@ -5,12 +5,15 @@ import java.sql.Date;
 public class Produto {
 
 	private String descricao;
-	private Date validade;
+	private String validade;
 	private String marca;
-	private float precoUnitario;
+	private double precoUnitario;
 	private String categoria;
 	
-	public Produto(String d, Date v, String m, float pu,String cat){
+	public Produto(){
+		
+	}
+	public Produto(String d, String v, String m, double pu,String cat){
 		this.setDescricao(d);
 		this.setValidade(v);
 		this.setMarca(m);
@@ -21,16 +24,17 @@ public class Produto {
 	public void exibeCategoria(){
 		System.out.println("Categoria dos produtos:\nBedidas: Alcoólica / Não alcoólica \nComida: Perecível / Não perecível");
 	}
+
 	public String getDescricao() {
 		return descricao;
 	}
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public Date getValidade() {
+	public String getValidade() {
 		return validade;
 	}
-	public void setValidade(Date validade) {
+	public void setValidade(String validade) {
 		this.validade = validade;
 	}
 	public String getMarca() {
@@ -39,10 +43,10 @@ public class Produto {
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
-	public float getPrecoUnitario() {
+	public double getPrecoUnitario() {
 		return precoUnitario;
 	}
-	public void setPrecoUnitario(float precoUnitario) {
+	public void setPrecoUnitario(double precoUnitario) {
 		this.precoUnitario = precoUnitario;
 	}
 

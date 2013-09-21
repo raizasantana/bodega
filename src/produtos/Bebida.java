@@ -4,12 +4,12 @@ import java.sql.Date;
 
 public class Bebida extends Produto {
 
-	private float litros;
+	private double litros;
 	
 	
-	public Bebida(String d, Date v, String m, float pu,float litros,String cat) {
-		super(d, v, m, pu,cat);
-		this.setLitros(litros);
+	public Bebida(String d, String v, String m, double e,double f,String cat) {
+		super(d, v, m, e,cat);
+		this.setLitros(f);
 		
 	}
 
@@ -17,11 +17,11 @@ public class Bebida extends Produto {
 	public void exibeCategoria() {
 		System.out.println("Categoria Bebidas: Alcoólica / Não alcoólica.");
 	}
-	public float getLitros() {
+	public double getLitros() {
 		return litros;
 	}
 
-	public void setLitros(float litros) {
+	public void setLitros(double litros) {
 		this.litros = litros;
 	}
 	
