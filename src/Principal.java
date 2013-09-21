@@ -37,6 +37,12 @@ public class Principal {
 		estoque.removeItem(arroz1Kg, 10);
 		estoque.listaItensEstoque();
 		
+		//Poliorfismo
+		Produto p = new Produto();
+		p.exibeCategoria();
+		skyy.exibeCategoria();
+		arroz1Kg.exibeCategoria();
+		
 		
 		
 		
