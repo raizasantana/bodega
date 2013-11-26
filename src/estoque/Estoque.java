@@ -23,13 +23,13 @@ public class Estoque {
 				return;
 			}
 		}
-		System.out.println("Produto não encontrado.");
+		System.out.println("Produto nï¿½o encontrado.");
 		
 	}
 	public void listaItensEstoque(){
 		System.out.println("\n::Lista de Itens::");
 		for (ItemEstoque itemEstoque : itens)
-			System.out.println("Descrição: "+itemEstoque.getProduto().getDescricao()+" Quantidade: "+itemEstoque.getQuantidade()+" Sessão: "+itemEstoque.getSessao());
+			System.out.println("Descriï¿½ï¿½o: "+itemEstoque.getProduto().getDescricao()+" Quantidade: "+itemEstoque.getQuantidade()+" Sessï¿½o: "+itemEstoque.getSessao());
 	}
 
 	public ArrayList<ItemEstoque> getItens() {
@@ -41,3 +41,6 @@ public class Estoque {
 	}
 	
 }
+
+
+//teste valber
