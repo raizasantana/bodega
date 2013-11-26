@@ -15,7 +15,7 @@ public class Bebida extends Produto {
 
 	@Override
 	public void exibeCategoria() {
-		System.out.println("Categoria Bebidas: Alcoólica / Não alcoólica.");
+		System.out.println("Categoria Bebidas: Alcoï¿½lica / Nï¿½o alcoï¿½lica.");
 	}
 	public double getLitros() {
 		return litros;
@@ -27,3 +27,4 @@ public class Bebida extends Produto {
 	
 	
 }
+ // TESTEEEEEEEEEEE
